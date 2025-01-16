@@ -1,54 +1,64 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     line-height: 1.6;
 }
 
 header {
     background: #00539C;
-    color: #fff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #333;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background: #eee;
-    padding: 10px 0;
-}
-
 nav a {
-    margin: 0 15px;
+    color: white;
     text-decoration: none;
-    color: #333;
+    margin: 0 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #00539C;
+    color: #FFD700;
 }
 
-/* Sections */
-section {
+main {
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
-    display: none; /* Hide all sections by default */
+    margin: auto;
+    background: white;
 }
 
-section#biography {
-    display: block; /* Show the Biography section by default */
+section {
+    margin-bottom: 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background: #00539C;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
